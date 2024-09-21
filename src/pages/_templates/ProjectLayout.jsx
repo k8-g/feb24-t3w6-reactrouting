@@ -1,14 +1,15 @@
+import { Outlet } from "react-router-dom";
 
-export default function PokemonProject() {
-    return (
-        <div>
-            <h1>Pokemon Project</h1>
-            <p>Here is a list of Pokemon:</p>
-            <ul>
-                <li>Bulbasaur</li>
-                <li>Charmander</li>
-                <li>Squirtle</li>
-            </ul>
-        </div>
-    );
+
+export default function ProjectLayout(props){
+	return(
+		<div>
+			<h1>Author</h1>
+			<h2>Kate!</h2>
+
+			<Outlet />
+
+			<h6>Copyright {new Date(Date.now()).getFullYear()} </h6>
+		</div>
+	)
 }
