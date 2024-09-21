@@ -1,10 +1,14 @@
-export default function ProjectLayout(props){
-    return(
-        <div>
-            <h1>Author</h1>
-            <h2>Alex!</h2>
 
-            <h6>Copyright {new Date(Date.now()).getFullYear()} </h6>
+export default function PokemonProject() {
+    return (
+        <div>
+            <h1>Pokemon Project</h1>
+            <p>Here is a list of Pokemon:</p>
+            <ul>
+                <li>Bulbasaur</li>
+                <li>Charmander</li>
+                <li>Squirtle</li>
+            </ul>
         </div>
-    )
+    );
 }
