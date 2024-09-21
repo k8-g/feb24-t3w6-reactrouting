@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import "../styles/Navbar.css";
 
 export default function Navbar () {
 	return(
@@ -22,6 +23,11 @@ export default function Navbar () {
 				return isActive ? "active" : ""
 			}}  >
 				<h3>Contact</h3>
+			</NavLink>
+			<NavLink to={"/projects"} className={({isActive}) => {
+				return isActive ? "active" : ""
+			}}  >
+				<h3>Projects</h3>
 			</NavLink>
 		</nav>
 	);
